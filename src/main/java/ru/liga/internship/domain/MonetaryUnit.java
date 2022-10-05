@@ -32,9 +32,23 @@ public class MonetaryUnit {
         this.cdx = values.get("cdx");
     }
 
+    public MonetaryUnit(Map<String,String> values, LocalDate date){
+        this.multiplier = Byte.valueOf(values.get("nominal"));
+        this.date = date;
+        this.rate = Float.valueOf(values.get("curs"));
+        this.cdx = values.get("cdx");
+    }
+
+    public MonetaryUnit(Map<String,String> values, LocalDate date, Float rate){
+        this.multiplier = Byte.valueOf(values.get("nominal"));
+        this.date = date;
+        this.rate = rate;
+        this.cdx = values.get("cdx");
+    }
+
     @Override
     public String toString() {
         NumberFormat formatter = new DecimalFormat("0.00");
-        return DateUtils.stringFromLocalDate(date) + " - " + formatter.format(getRatePerUnit());
+        return DateUtils.outputStringFromLocalDate(date) + " - " + formatter.format(getRatePerUnit());
     }
 }
