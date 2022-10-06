@@ -1,8 +1,7 @@
 package ru.liga.internship.service.forecast.service;
 
 import lombok.AllArgsConstructor;
-import lombok.Setter;
-import ru.liga.internship.parser.Messages;
+import ru.liga.internship.domain.Messages;
 import ru.liga.internship.parser.StateMachine;
 import ru.liga.internship.service.forecast.ForecastingService;
 

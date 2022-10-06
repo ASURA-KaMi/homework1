@@ -2,9 +2,8 @@ package ru.liga.internship.parser;
 
 import lombok.Getter;
 import lombok.Setter;
-import ru.liga.internship.domain.MonetaryUnit;
 import ru.liga.internship.service.forecast.ForecastAlgorithm;
-import ru.liga.internship.service.forecast.ForecastRange;
+import ru.liga.internship.domain.ForecastRange;
 import ru.liga.internship.utils.CsvUtils;
 
 import java.time.LocalDate;

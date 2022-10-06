@@ -1,8 +1,7 @@
 package ru.liga.internship.service.forecast;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import ru.liga.internship.domain.ForecastRange;
 import ru.liga.internship.domain.MonetaryUnit;
 import ru.liga.internship.utils.CsvUtils;
 

@@ -3,6 +3,7 @@ package ru.liga.internship.parser;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import ru.liga.internship.domain.Messages;
 
 @Getter
 @Setter

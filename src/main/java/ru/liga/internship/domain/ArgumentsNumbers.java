@@ -1,4 +1,4 @@
-package ru.liga.internship.parser;
+package ru.liga.internship.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

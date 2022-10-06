@@ -1,10 +1,10 @@
 package ru.liga.internship.parser;
 
 import lombok.Getter;
-import ru.liga.internship.domain.MonetaryUnit;
-import ru.liga.internship.service.forecast.ForecastRange;
-import ru.liga.internship.service.forecast.ForecastType;
-import ru.liga.internship.service.forecast.ForecastingService;
+import ru.liga.internship.domain.CurrencyCode;
+import ru.liga.internship.domain.Messages;
+import ru.liga.internship.domain.ForecastRange;
+import ru.liga.internship.domain.ForecastType;
 import ru.liga.internship.utils.CsvUtils;
 import ru.liga.internship.utils.DateUtils;
 

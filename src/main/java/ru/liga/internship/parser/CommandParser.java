@@ -1,5 +1,7 @@
 package ru.liga.internship.parser;
 
+import ru.liga.internship.domain.Messages;
+
 import java.util.Stack;
 
 public class CommandParser {
