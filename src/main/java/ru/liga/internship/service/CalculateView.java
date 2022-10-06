@@ -1,4 +1,4 @@
-package ru.liga.internship.service.forecast.service;
+package ru.liga.internship.service;
 
 import lombok.AllArgsConstructor;
 import ru.liga.internship.domain.Messages;

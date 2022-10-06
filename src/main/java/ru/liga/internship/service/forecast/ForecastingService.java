@@ -3,6 +3,7 @@ package ru.liga.internship.service.forecast;
 import lombok.AllArgsConstructor;
 import ru.liga.internship.domain.ForecastRange;
 import ru.liga.internship.domain.MonetaryUnit;
+import ru.liga.internship.service.forecast.algorithms.ForecastAlgorithm;
 import ru.liga.internship.utils.CsvUtils;
 
 import java.time.LocalDate;
@@ -18,7 +19,7 @@ public class ForecastingService {
     public List<MonetaryUnit> rangeForecast(){
         List<MonetaryUnit> outputUnits = new ArrayList<>();
         for (int i = 0; i < this.range.getRange(); i++){
-            this.date = date.plusDays(i);
+            this.date = date.plusDays(1);
             outputUnits.add(dayForecast());
         }
         return outputUnits;

@@ -1,4 +1,4 @@
-package ru.liga.internship.service.forecast;
+package ru.liga.internship.service.forecast.algorithms;
 
 import ru.liga.internship.domain.MonetaryUnit;
 import ru.liga.internship.utils.CsvUtils;

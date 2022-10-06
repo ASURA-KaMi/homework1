@@ -1,12 +1,10 @@
-package ru.liga.internship.service.forecast;
+package ru.liga.internship.service.forecast.algorithms;
 
 import ru.liga.internship.domain.MonetaryUnit;
 import ru.liga.internship.utils.CsvUtils;
-import ru.liga.internship.utils.DateUtils;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 public class MysticalAlgorithm implements ForecastAlgorithm{

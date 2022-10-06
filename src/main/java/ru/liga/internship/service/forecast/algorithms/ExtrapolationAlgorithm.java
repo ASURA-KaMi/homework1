@@ -1,4 +1,4 @@
-package ru.liga.internship.service.forecast;
+package ru.liga.internship.service.forecast.algorithms;
 
 import ru.liga.internship.domain.MonetaryUnit;
 import ru.liga.internship.utils.CsvUtils;
@@ -8,7 +8,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 public class ExtrapolationAlgorithm implements ForecastAlgorithm{
     @Override

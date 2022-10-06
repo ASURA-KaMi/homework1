@@ -2,10 +2,10 @@ package ru.liga.internship.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import ru.liga.internship.service.forecast.ExtrapolationAlgorithm;
-import ru.liga.internship.service.forecast.ForecastAlgorithm;
-import ru.liga.internship.service.forecast.LastYearAlgorithm;
-import ru.liga.internship.service.forecast.MysticalAlgorithm;
+import ru.liga.internship.service.forecast.algorithms.ExtrapolationAlgorithm;
+import ru.liga.internship.service.forecast.algorithms.ForecastAlgorithm;
+import ru.liga.internship.service.forecast.algorithms.LastYearAlgorithm;
+import ru.liga.internship.service.forecast.algorithms.MysticalAlgorithm;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

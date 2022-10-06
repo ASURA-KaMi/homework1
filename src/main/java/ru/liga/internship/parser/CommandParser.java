@@ -45,6 +45,7 @@ public class CommandParser {
         }
         if (isCalculable)
             commandsFunctions.calculate();
+
         if (!commandErrorStack.empty()) {
             StateMachine stateMachine = new StateMachine("error");
             stateMachine.setErrorStack(commandErrorStack);

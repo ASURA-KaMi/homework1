@@ -2,7 +2,7 @@ package ru.liga.internship.parser;
 
 import lombok.Getter;
 import lombok.Setter;
-import ru.liga.internship.service.forecast.ForecastAlgorithm;
+import ru.liga.internship.service.forecast.algorithms.ForecastAlgorithm;
 import ru.liga.internship.domain.ForecastRange;
 import ru.liga.internship.utils.CsvUtils;
 

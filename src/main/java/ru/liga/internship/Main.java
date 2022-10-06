@@ -5,7 +5,7 @@ import ru.liga.internship.parser.CommandParser;
 import ru.liga.internship.domain.Messages;
 import ru.liga.internship.parser.StateAndResult;
 import ru.liga.internship.parser.StateMachine;
-import ru.liga.internship.service.forecast.service.CalculateView;
+import ru.liga.internship.service.CalculateView;
 
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ru.liga.internship.service.forecast;
+package ru.liga.internship.service.forecast.algorithms;
 
 /**
  *  The {@code LinearRegression} class performs a simple linear regression
