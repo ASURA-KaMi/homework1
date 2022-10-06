@@ -1,4 +1,4 @@
-package ru.liga.internship.ui;
+package ru.liga.internship.parser;
 
 public enum CurrencyCode {
     USD,

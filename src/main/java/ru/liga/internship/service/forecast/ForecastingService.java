@@ -10,13 +10,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 @AllArgsConstructor
-@NoArgsConstructor
-@Setter
 public class ForecastingService {
-    private CsvUtils csvUtils;
-    private ForecastAlgorithm forecastAlgorithm;
+    private final CsvUtils csvUtils;
+    private final ForecastAlgorithm forecastAlgorithm;
     private LocalDate date;
-    private ForecastRange range;
+    private final ForecastRange range;
 
     public List<MonetaryUnit> rangeForecast(){
         List<MonetaryUnit> outputUnits = new ArrayList<>();
@@ -27,7 +25,7 @@ public class ForecastingService {
         return outputUnits;
     }
 
-    public MonetaryUnit dayForecast(){
+    private MonetaryUnit dayForecast(){
         return this.forecastAlgorithm.findCurrency(this.date, this.csvUtils);
     }
 }
