@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import ru.liga.internship.domain.ForecastRange;
 import ru.liga.internship.domain.MonetaryUnit;
 import ru.liga.internship.service.forecast.algorithms.ForecastAlgorithm;
-import ru.liga.internship.utils.CsvUtils;
+import ru.liga.internship.utils.CsvReader;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 @AllArgsConstructor
 public class ForecastingService {
-    private final CsvUtils csvUtils;
+    private final CsvReader csvReader;
     private final ForecastAlgorithm forecastAlgorithm;
     private LocalDate date;
     private final ForecastRange range;
@@ -26,6 +26,6 @@ public class ForecastingService {
     }
 
     private MonetaryUnit dayForecast(){
-        return this.forecastAlgorithm.findCurrency(this.date, this.csvUtils);
+        return this.forecastAlgorithm.findCurrency(this.date, this.csvReader);
     }
 }

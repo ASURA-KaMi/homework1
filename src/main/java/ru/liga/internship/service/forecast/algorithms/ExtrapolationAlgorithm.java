@@ -1,7 +1,7 @@
 package ru.liga.internship.service.forecast.algorithms;
 
 import ru.liga.internship.domain.MonetaryUnit;
-import ru.liga.internship.utils.CsvUtils;
+import ru.liga.internship.utils.CsvReader;
 import ru.liga.internship.utils.DateUtils;
 
 import java.time.LocalDate;
@@ -11,10 +11,10 @@ import java.util.Map;
 
 public class ExtrapolationAlgorithm implements ForecastAlgorithm{
     @Override
-    public MonetaryUnit findCurrency(LocalDate date, CsvUtils csvUtils) {
+    public MonetaryUnit findCurrency(LocalDate date, CsvReader csvReader) {
         List<Double> x = new ArrayList<>();
         List<Double> y = new ArrayList<>();
-        List<Map<String,String>> valuesByDate = csvUtils.getValuesList(30, 30);
+        List<Map<String,String>> valuesByDate = csvReader.getValuesList(30, 30);
         valuesByDate.stream().forEach(values ->{
             LocalDate localDate = DateUtils.localDateFromString(values.get("data"));
             Double currency = Double.valueOf(values.get("curs"));

@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import ru.liga.internship.service.forecast.algorithms.ForecastAlgorithm;
 import ru.liga.internship.domain.ForecastRange;
-import ru.liga.internship.utils.CsvUtils;
+import ru.liga.internship.utils.CsvReader;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -28,7 +28,7 @@ public class StateMachine {
     public StateMachine(String command){
         this.command = command;
     }
-    private List<CsvUtils> csvUtils;
+    private List<CsvReader> csvUtils;
     private LocalDate date;
     private ForecastAlgorithm forecastAlgorithm;
 

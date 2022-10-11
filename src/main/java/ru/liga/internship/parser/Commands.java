@@ -5,7 +5,7 @@ import ru.liga.internship.domain.CurrencyCode;
 import ru.liga.internship.domain.Messages;
 import ru.liga.internship.domain.ForecastRange;
 import ru.liga.internship.domain.ForecastType;
-import ru.liga.internship.utils.CsvUtils;
+import ru.liga.internship.utils.CsvReader;
 import ru.liga.internship.utils.DateUtils;
 
 import java.time.LocalDate;
@@ -31,8 +31,8 @@ public class Commands {
     }
 
     private Function<StateMachine, StateMachine> currencyExchanger = s -> {
-        List<CsvUtils> csvUtils = new ArrayList<>();
-        Arrays.stream(s.getCommand().split(",")).forEach(currency -> csvUtils.add(new CsvUtils(currency)));
+        List<CsvReader> csvUtils = new ArrayList<>();
+        Arrays.stream(s.getCommand().split(",")).forEach(currency -> csvUtils.add(new CsvReader(currency)));
         s.setCsvUtils(csvUtils);
         return s;
     };
@@ -52,7 +52,6 @@ public class Commands {
                 s.setForecastRange(ForecastRange.valueOf(s.getCommand()));
             }
 
-//rate EUR -date tomorrow -alg myst
         return commandStack.pop().apply(s.copy(states.pop()));
     };
 

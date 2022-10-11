@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.*;
 
-public class CsvUtils {
+public class CsvReader {
     private final String FILE_FORMAT = ".csv";
     private final String CSV_SPLITTER = ";";
     private final String STRING_DELIMITER = "\"";
@@ -14,7 +14,7 @@ public class CsvUtils {
     private InputStream currencyRegister;
     private InputStreamReader currencyRegisterReader;
 
-    public CsvUtils(String currencyName){
+    public CsvReader(String currencyName){
         this.currencyFileName = currencyName + FILE_FORMAT;
         setupReaders();
         this.fields = getFieldsFromCsv();
